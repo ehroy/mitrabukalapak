@@ -26,13 +26,15 @@ const readlineSync = require('readline-sync');
   
           const browser = await puppeteer.launch({
               ignoreDefaultArgs: ['--enable-automation'],
-              executablePath:'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
+            //   executablePath:'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
               userDataDir: 'a',
               headless:true,
               devtools:false,
               args: [
                   '--disable-notifications',
-                  '--disable-features=site-per-process'
+                  '--disable-features=site-per-process',
+                  "--no-sandbox",
+                  "--disable-gpu"
               ]
               
           })

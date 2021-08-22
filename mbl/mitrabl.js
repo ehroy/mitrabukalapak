@@ -28,7 +28,7 @@ const readlineSync = require('readline-sync');
               ignoreDefaultArgs: ['--enable-automation'],
               executablePath:'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
               userDataDir: 'a',
-              headless:false,
+              headless:true,
               devtools:false,
               args: [
                   '--disable-notifications',
